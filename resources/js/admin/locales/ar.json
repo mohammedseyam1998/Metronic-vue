@@ -1,0 +1,21 @@
+{
+    "message": "hello Arabic!!",
+    "components":"المكونات",
+    "actions": "أحداث",
+    "reports": "التقارير",
+    "apps": "التطبيقات",
+    "new": "جديد",
+    "base":"أساسي",
+    "icons":"الأيقونات",
+    "buttons":"الأزرار",
+    "portlets":"المداخل",
+    "timeline":"المدة الزمنية",
+    "widget":"القطعة",
+    "calender":"التقويم",
+    "charts":"الرسوم البيانية",
+    "maps": "الخرائط",
+    "utils":"خدمات",
+    "state-colors":"لوحة التحكم",
+    "state-examples":"أمثلة "
+
+  }
