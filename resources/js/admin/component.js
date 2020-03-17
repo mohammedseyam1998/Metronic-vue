@@ -9,6 +9,8 @@ import Header from '../admin/components/Header';
 import SelectLanguage from '../admin/components/SelectLanguage';
 import Dashboard from '../admin/components/Dashboard';
 import StateColors from '../admin/components/StateColors';
+import Typography from '../admin/components/Typography';
+import Stack from '../admin/components/Stack';
 
 
 Vue.component('horizontal-header',HorizontalMenu);
@@ -21,6 +23,8 @@ Vue.component('v-header',Header);
 Vue.component('v-language',SelectLanguage);
 Vue.component('v-dashboard',Dashboard);
 Vue.component('v-state',StateColors);
+Vue.component('v-typography',Typography);
+Vue.component('v-stack',Stack);
 
 
 

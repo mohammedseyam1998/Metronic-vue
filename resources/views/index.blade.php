@@ -4,13 +4,18 @@
 		<meta charset="utf-8" />
 		<title>Metronic | Dashboard</title>
 		<meta name="description" content="Latest updates and statistic charts">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" id="m" href="{{asset('/assets/demo/default/base/style.bundle.css')}}">
+        <link rel="stylesheet" href="" id="rtlDir">
+        <link rel="stylesheet" id="vendorRtl" href="{{asset('/assets/vendors/base/vendors.bundle.css')}}">
 
-        <link rel="stylesheet" href="{{asset('/assets/vendors/base/vendors.bundle.css')}}">
-        <link rel="stylesheet" href="{{asset('/assets/demo/default/base/style.bundle.css')}}">
+        <link rel="stylesheet" href="" id="ltfDir">
+
         <link rel="stylesheet" href="{{asset('/assets/vendors/custom/fullcalendar/fullcalendar.bundle.css')}}">
         <link rel="stylesheet" href="{{asset('/assets/demo/default/media/img/logo/favicon.ico')}}">
-		<!--begin::Web font -->
+        <!--begin::Web font -->
+
+
 		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
 		<script>
 			WebFont.load({
