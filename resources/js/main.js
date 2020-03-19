@@ -3,11 +3,12 @@ import App from './App.vue'
 import './admin/component'
 import './admin/router/index'
 import i18n from './admin/i18n'
-import router from './admin/router/index'
+import router from './admin/router/index';
+import axios from 'axios';
 
 // import Vuex from 'vuex'
 
-// Vue.use(Vuex)
+Vue.use(axios)
 Vue.config.productionTip = false
 
 
