@@ -14,7 +14,10 @@
         <link rel="stylesheet" href="{{asset('/assets/vendors/custom/fullcalendar/fullcalendar.bundle.css')}}">
         <link rel="stylesheet" href="{{asset('/assets/demo/default/media/img/logo/favicon.ico')}}">
         <!--begin::Web font -->
+<<<<<<< HEAD
         <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js">
+=======
+>>>>>>> 9bf32ef2775dbd4f02cdd7022028d3cc77f77fe4
 
 
 		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>

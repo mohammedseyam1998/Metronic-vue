@@ -11,9 +11,12 @@ import Dashboard from '../admin/components/Dashboard';
 import StateColors from '../admin/components/StateColors';
 import Typography from '../admin/components/Typography';
 import Stack from '../admin/components/Stack';
+<<<<<<< HEAD
 import Login from '../admin/components/Login';
 import Register from '../admin/components/Register';
 import Layout from '../admin/components/Layout';
+=======
+>>>>>>> 9bf32ef2775dbd4f02cdd7022028d3cc77f77fe4
 
 
 Vue.component('horizontal-header',HorizontalMenu);
@@ -28,9 +31,12 @@ Vue.component('v-dashboard',Dashboard);
 Vue.component('v-state',StateColors);
 Vue.component('v-typography',Typography);
 Vue.component('v-stack',Stack);
+<<<<<<< HEAD
 Vue.component('v-login',Login);
 Vue.component('v-register',Register);
 Vue.component('v-register',Layout);
+=======
+>>>>>>> 9bf32ef2775dbd4f02cdd7022028d3cc77f77fe4
 
 
 
