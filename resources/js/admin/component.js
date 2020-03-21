@@ -13,6 +13,7 @@ import Typography from '../admin/components/Typography';
 import Stack from '../admin/components/Stack';
 import Login from '../admin/components/Login';
 import Register from '../admin/components/Register';
+import signIn from '../admin/components/signIn';
 import Layout from '../admin/components/Layout';
 
 
@@ -30,7 +31,8 @@ Vue.component('v-typography',Typography);
 Vue.component('v-stack',Stack);
 Vue.component('v-login',Login);
 Vue.component('v-register',Register);
-Vue.component('v-register',Layout);
+Vue.component('v-signIn',signIn);
+Vue.component('v-layout',Layout);
 
 
 
