@@ -5,7 +5,19 @@ import './admin/router/index'
 import i18n from './admin/i18n'
 import router from './admin/router/index';
 import axios from 'axios';
+import VueGoodTablePlugin from 'vue-good-table';
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 
+
+Vue.use(BootstrapVue);
+Vue.use(IconsPlugin);
+
+// import the styles
+import 'vue-good-table/dist/vue-good-table.css'
+
+Vue.use(VueGoodTablePlugin);
 // import Vuex from 'vuex'
 
 Vue.use(axios)

@@ -15,6 +15,7 @@ import Login from '../admin/components/Login';
 import Register from '../admin/components/Register';
 import signIn from '../admin/components/signIn';
 import Layout from '../admin/components/Layout';
+import Table from '../admin/components/Table';
 
 
 Vue.component('horizontal-header',HorizontalMenu);
@@ -33,6 +34,7 @@ Vue.component('v-login',Login);
 Vue.component('v-register',Register);
 Vue.component('v-signIn',signIn);
 Vue.component('v-layout',Layout);
+Vue.component('v-table',Table);
 
 
 

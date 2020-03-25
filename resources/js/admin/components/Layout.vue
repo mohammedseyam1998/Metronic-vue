@@ -12,7 +12,7 @@
 			<!-- END: Header -->
 
 			<!-- begin::Body -->
-			<div class="m-grid__item m-grid__item--fluid m-grid m-grid--ver-desktop m-grid--desktop m-body">
+			<div class="m-grid__item m-grid__item--fluid m-grid m-grid--ver-desktop m-grid--desktop m-body" style="min-height: 1200px;">
                 <!-- BEGIN: Aside -->
 
                 <v-aside></v-aside>
@@ -20,6 +20,7 @@
                  <!-- BEGIN: Content -->
 
                  <!-- <v-dashboard></v-dashboard> -->
+
                  <router-view></router-view>
 
 			</div>

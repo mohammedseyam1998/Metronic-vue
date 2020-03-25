@@ -6,6 +6,7 @@ import Login from '../components/Login'
 import Layout from '../components/Layout'
 import Register from '../components/Register'
 import signIn from '../components/signIn'
+import Table from '../components/Table'
 
 
 
@@ -30,6 +31,7 @@ export default  [
             { path: '/state-color', component:  StateColors },
             { path: '/typography', component:  Typography },
             { path: '/stack', component:  Stack },
+            { path: '/table', component:  Table },
             ]
     }
 
