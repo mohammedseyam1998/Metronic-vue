@@ -16,6 +16,10 @@ import Register from '../admin/components/Register';
 import signIn from '../admin/components/signIn';
 import Layout from '../admin/components/Layout';
 import Table from '../admin/components/Table';
+import Picker from '../admin/components/Picker';
+import Calendar from '../admin/components/Calendar';
+import Verte from 'verte';
+import 'verte/dist/verte.css';
 
 
 Vue.component('horizontal-header',HorizontalMenu);
@@ -35,6 +39,9 @@ Vue.component('v-register',Register);
 Vue.component('v-signIn',signIn);
 Vue.component('v-layout',Layout);
 Vue.component('v-table',Table);
+Vue.component('v-picker',Picker);
+Vue.component('v-calendar',Calendar);
+Vue.component('verte', Verte);
 
 
 

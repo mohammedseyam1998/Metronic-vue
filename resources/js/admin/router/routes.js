@@ -7,6 +7,8 @@ import Layout from '../components/Layout'
 import Register from '../components/Register'
 import signIn from '../components/signIn'
 import Table from '../components/Table'
+import Picker from '../components/Picker'
+import Calendar from '../components/Calendar'
 
 
 
@@ -32,6 +34,8 @@ export default  [
             { path: '/typography', component:  Typography },
             { path: '/stack', component:  Stack },
             { path: '/table', component:  Table },
+            { path: '/picker', component:  Picker },
+            { path: '/calendar', component:  Calendar },
             ]
     }
 
