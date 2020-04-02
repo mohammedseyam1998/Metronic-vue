@@ -19,6 +19,10 @@ import Table from '../admin/components/Table';
 import Picker from '../admin/components/Picker';
 import Calendar from '../admin/components/Calendar';
 import managePreferences from '../admin/components/managePreferences';
+import Items from '../admin/components/Items';
+import Carousel from 'primevue/carousel';
+
+
 
 import Verte from 'verte';
 import 'verte/dist/verte.css';
@@ -45,6 +49,11 @@ Vue.component('v-picker',Picker);
 Vue.component('v-calendar',Calendar);
 Vue.component('v-managePreferences',managePreferences);
 Vue.component('verte', Verte);
+Vue.component('v-item', Items);
+Vue.component('Carousel', Carousel);
+
+
+
 
 
 

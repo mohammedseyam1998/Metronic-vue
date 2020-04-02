@@ -10,6 +10,7 @@ import Table from '../components/Table'
 import Picker from '../components/Picker'
 import Calendar from '../components/Calendar'
 import managePreferences from '../components/managePreferences'
+import Items from '../components/Items'
 
 
 
@@ -38,6 +39,7 @@ export default  [
             { path: '/picker', component:  Picker },
             { path: '/calendar', component:  Calendar },
             { path: '/managePreferences', component:  managePreferences },
+            { path: '/items', component:  Items },
             ]
     }
 

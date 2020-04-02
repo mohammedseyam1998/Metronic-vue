@@ -13,6 +13,12 @@
 
         <link rel="stylesheet" href="{{asset('/assets/vendors/custom/fullcalendar/fullcalendar.bundle.css')}}">
         <link rel="stylesheet" href="{{asset('/assets/demo/default/media/img/logo/favicon.ico')}}">
+        <link href="https://unpkg.com/primevue/resources/themes/nova-light/theme.css " rel="stylesheet">
+        <link href="https://unpkg.com/primevue/resources/primevue.min.css " rel="stylesheet">
+        <link href="https://unpkg.com/primeicons/primeicons.css " rel="stylesheet">
+        <script src="https://unpkg.com/vue"></script>
+        <script src="https://unpkg.com/primevue/components/calendar/calendar.umd.min.js"></script>
+
         <!--begin::Web font -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js">
 

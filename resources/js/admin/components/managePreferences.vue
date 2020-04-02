@@ -5,25 +5,12 @@
         <div class="col-6">
           <label class="label-name">
              <span style="margin-left: -260px;">  Name: </span>
-            <input
-              class="form-control"
-              type="text"
-              value
-              name="name"
-              v-model="newDataNode"
-              placeholder="your main category"
-            />
+            <input class="form-control" type="text" name="name" v-model="newDataNode" placeholder="your main category" />
           </label>
           <br />
-          <p v-if="ifEmpty" style="color: #f00">Enter your main category name</p>
-          <button
-            class="btn btn-info mb-3 text-uppercase"
-            @click.prevent="addNode"
-          style="margin-left: -120px;">Add a main category</button><br>
-          <button
-            class="btn btn-info mb-3 text-uppercase"
-            @click.prevent="addNode"
-          style="margin-left: -120px;">Add a sub category</button>
+          <p v-if="ifEmpty" style="color: #f00">Please enter your category name</p>
+          <button class="btn btn-info mb-3 text-uppercase" @click.prevent="addMCategory" style="margin-left: -120px;">Add a main category</button><br>
+           <button class="btn btn-info mb-3 text-uppercase" @click.prevent="addMCategory" style="margin-left: -120px;">Add a sub category</button>
           <br />
 
           <div class="tree" style="margin: 50px;">
@@ -108,11 +95,11 @@ export default {
           name: "Clothes",
           id: 1,
           pid: 0,
-          dragDisabled: true,
-          addTreeNodeDisabled: true,
-          addLeafNodeDisabled: true,
-          editNodeDisabled: true,
-          delNodeDisabled: true,
+          dragDisabled: false,
+          addTreeNodeDisabled: false,
+          addLeafNodeDisabled: false,
+          editNodeDisabled: false,
+          delNodeDisabled: false,
           children: [
             {
               name: "Men's fashion",
@@ -186,16 +173,16 @@ export default {
     onClick (params) {
       console.log(params)
     },
-    addNode() {
+    addMCategory() {
       var node = new TreeNode({ name: this.newDataNode, isLeaf: false });
       if (!this.data.children) this.data.children = [];
-      if (!this.newDataNode) {
-        this.ifEmpty = true;
+      if (this.newDataNode) {
+        this.ifEmpty = false;
+         this.data.addChildren(node);
+         this.newDataNode = "";
       } else {
-        this.data.addChildren(node);
-        this.ifEmpsty = false;
-        this.newDataNode = "";
-      }
+        this.ifEmpty = true;
+         }
     },
     getNewTree() {
       var vm = this;
