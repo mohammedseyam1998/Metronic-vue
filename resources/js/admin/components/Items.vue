@@ -4,19 +4,19 @@
 	<template #item="slotProps">
 		<div class="car-details">
 			<div class="p-grid p-nogutter">
-				<div class="p-col-12">
-					<img src= "https://via.placeholder.com/150"/>
+				<div class="p-col-12" style="min-height: 66px;">
+					<img :src="'./assets/app/media/img/logos/' + slotProps.data.brand + '.png'" />
 				</div>
-				<div class="p-col-12 car-data">
+				<div class="p-col-12 ">
                        <div class="item">
 
-                        <h4 class="text-uppercase mt-2">{{slotProps.data.title}}</h4>
+                        <p class="mt-2" style="color: #3927ca;font-weight: bold">{{slotProps.data.title}}</p>
                         <ul class="list-unstyled slider-eval">
-                        <li class="active"><i class="fas fa-star" style="font-size: 20px;"></i></li>
-                        <li class="active"><i class="fas fa-star" style="font-size: 20px;"></i></li>
-                        <li class="active"><i class="fas fa-star" style="font-size: 20px;"></i></li>
-                        <li class="active"><i class="fas fa-star" style="font-size: 20px;"></i></li>
-                        <li><i class="fas fa-star" style="font-size: 20px;"></i></li>
+                        <li class="active"><i class="fas fa-star" style="font-size: 18px;"></i></li>
+                        <li class="active"><i class="fas fa-star" style="font-size: 18px;"></i></li>
+                        <li class="active"><i class="fas fa-star" style="font-size: 18px;"></i></li>
+                        <li class="active"><i class="fas fa-star" style="font-size: 18px;"></i></li>
+                        <li><i class="fas fa-star" style="font-size: 18px;"></i></li>
 
                         </ul>
                         <p class="price">{{slotProps.data.price}}</p>
@@ -36,58 +36,46 @@ export default {
 	return {
         cars:[
             {
-                  title:"mohammed",
-                  year:';lkjh',
-                  color:'jhgf',
-                  price:'30%'
+                  title:"Mohammed Seyam",
+                  price:'30$',
+                  brand:'logo-1'
 
             },
             {
-                  title:"mohammed",
-                  year:';lkjh',
-                  color:'jhgf',
-                  price:'45%'
+                  title:"Mohammed Seyam",
+                  price:'45$',
+                   brand:'logo-2'
 
             },
               {
-                  title:"mohammed",
-                  year:';lkjh',
-                  color:'jhgf',
-                     price:'80%'
+                  title:"Mohammed Seyam",
+                     price:'80$',
+                      brand:'logo-3'
 
             },
               {
-                  title:"mohammed",
-                  year:';lkjh',
-                  color:'jhgf',
-                     price:'40%'
+                  title:"Mohammed Seyam",
+                     price:'40$',
+                      brand:'logo-4'
 
             },  {
-                  title:"mohammed",
-                  year:';lkjh',
-                  color:'jhgf',
-                     price:'330%'
+                  title:"Mohammed Seyam",
+                     price:'330$'
 
             },
               {
-                  title:"mohammed",
-                  year:';lkjh',
-                  color:'jhgf',
-                     price:'3550%'
+                  title:"Mohammed Seyam",
+                     price:'350$'
 
             },
               {
-                  title:"mohammed",
-                  year:';lkjh',
-                  color:'jhgf',
-                     price:'380%'
+                  title:"Mohammed Seyam",
+                     price:'380$'
 
             },
               {
-                  title:"mohammed",
-                  year:';lkjh',
-                  color:'jhgf',
-                     price:'60%'
+                  title:"Mohammed Seyam",
+                     price:'60$'
 
             },
 
@@ -118,14 +106,6 @@ export default {
 #pv_id_1{
 max-width: 1100px;
 }
-
-
-
-
-
-
-
-
 .item .price{
   font-size:15px;
   color: rgb(189, 32, 32);
@@ -136,6 +116,8 @@ max-width: 1100px;
   margin: 0 auto;
   height:8px;
   background-color: rgb(255, 255, 255);
+  margin-bottom: 5px;
+
 }
 .item .progress-bar .fill-color{
   background: rgb(192, 216, 126);
@@ -145,6 +127,7 @@ max-width: 1100px;
 }
  .item .sold {
   font-size: 15px;
+  margin-left: -140px;
 }
  .item .slider-eval li{
   display: inline-block;
