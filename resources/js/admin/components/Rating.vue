@@ -1,27 +1,26 @@
 <template>
     <div class="row">
       <div class="col-6 mt-3">
-        <div class="send-text">
-
-          <form >
+        <div class="sendInfo">
+            <form >
               <div class="row">
               <div class="col-4"><h4 style="font-size: 18px;">Send Evaluation</h4></div>
 
-            <div class="eva-stars col-8" style="margin: -8px 0px 5px 0px;">
+            <div class="col-8" style="margin: -8px 0px 5px 0px;">
               <rate :length="5" v-model="myRate" />
             </div>
             </div>
             <textarea class="form-control" cols="25" rows="8"></textarea>
             <button class="b-style mt-3" style="margin: 10px 10px 10px -280px;">Send an evaluation</button>
           </form>
-          <div class="load-more mt-3 text-center">
+          <div class="moreDetailes mt-3 text-center">
             <button class="b-style">More Deatailes<i class="fas fa-spinner ml-2"></i>
             </button>
           </div>
         </div>
       </div>
       <div class="col-6">
-        <div class="eva-with-progress">
+        <div class="progresEv">
             <div style="text-align: left;">
             <h2>{{myRate}}</h2>
           <rate :length="5" v-model="myRate" />
@@ -75,7 +74,7 @@ export default {
 }
 </script>
 <style>
-.eva-with-progress h2{
+.progresEv h2{
     font-size: 70px;
     padding: 5px;
     color: #6d9411
