@@ -12,7 +12,9 @@ import 'bootstrap-vue/dist/bootstrap-vue.css';
 
 
 // import TreeView from '@ll931217/vue-treeview'
+import rate from 'vue-rate';
 
+Vue.use(rate)
 // Vue.use(TreeView)
 import VueTreeList from 'vue-tree-list'
 

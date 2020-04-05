@@ -19,6 +19,16 @@ import Table from '../admin/components/Table';
 import Picker from '../admin/components/Picker';
 import Calendar from '../admin/components/Calendar';
 import managePreferences from '../admin/components/managePreferences';
+import Tabs from '../admin/components/Tabs';
+import Overview from '../admin/components/Overview';
+import Features from '../admin/components/Features';
+import Rating from '../admin/components/Rating';
+import Comments from '../admin/components/Comments';
+
+
+
+
+
 import Items from '../admin/components/Items';
 import Carousel from 'primevue/carousel';
 
@@ -50,6 +60,16 @@ Vue.component('v-calendar',Calendar);
 Vue.component('v-managePreferences',managePreferences);
 Vue.component('verte', Verte);
 Vue.component('v-item', Items);
+Vue.component('v-tabs', Tabs);
+Vue.component('v-overview', Overview);
+Vue.component('v-features', Features);
+Vue.component('v-rating', Rating);
+Vue.component('v-comments', Comments);
+
+
+
+
+
 Vue.component('Carousel', Carousel);
 
 
