@@ -5,7 +5,7 @@
        <div class="col-12">
     <label for="inputEmail3" class=" col-form-label">Email</label>
     <div >
-      <input type="email" class="form-control" id="inputEmail3" required>
+      <input type="email" class="form-control" id="inputEmail3" placeholder="name@example.com" required>
       <div class="invalid-feedback">
         Please provide a valid Email.
       </div>
@@ -16,7 +16,8 @@
        <div class="col-12">
     <label for="inputPassword3" class=" col-form-label">Password</label>
     <div >
-      <input type="password" class="form-control" id="inputPassword3" required>
+      <input :type="fieldType" class="form-control" id="inputPassword3" placeholder="************"  v-model="password" required>
+       <i @click="switchField(), showPassword = !showPassword" v-bind:class="{ slash: showPassword }" class="fas fa-eye fa-lg showpass-icon"></i>
       <div class="invalid-feedback">
         Please provide a valid password.
       </div>
@@ -28,7 +29,8 @@
     <label for="inputPassword4" class=" col-form-label">Conf Password</label>
 
     <div >
-      <input type="password" class="form-control" id="inputPassword4" required>
+      <input :type="fieldType" class="form-control" id="inputPassword4" placeholder="************" v-model="Confpassword"  required>
+       <i @click="switchField(), showPassword = !showPassword" v-bind:class="{ slash: showPassword }" class="fas fa-eye fa-lg showpass-icon"></i>
        <div class="invalid-feedback">
         Please provide a valid password.
       </div>
@@ -68,6 +70,14 @@
 </template>
 <script>
  export default {
+     data(){
+         return{
+         password:'',
+         Confpassword:'',
+         showPassword: false,
+         fieldType: 'password'
+         }
+     },
 
  methods: {
     validation() {
@@ -82,7 +92,10 @@
         form.classList.add('was-validated');
       }, false);
     });
-  }
+  },
+  switchField() {
+      this.fieldType = this.fieldType === 'password' ? 'text' : 'password'
+    }
 
  },
  }
@@ -94,8 +107,11 @@
 
 
 </script>
-<style scoped>
-.form-group{
-    padding: 2px;
+<style >
+ .showpass-icon{
+  position: absolute;
+  right: 22px;
+  top: 37px;
+  cursor: pointer;
 }
 </style>
