@@ -24,6 +24,13 @@ import Overview from '../admin/components/Overview';
 import Features from '../admin/components/Features';
 import Rating from '../admin/components/Rating';
 import Comments from '../admin/components/Comments';
+import RegForm from '../admin/components/RegForm';
+import baseForm from '../admin/components/baseForm';
+
+import accountForm from '../admin/components/accountForm';
+
+
+
 
 
 
@@ -65,6 +72,11 @@ Vue.component('v-overview', Overview);
 Vue.component('v-features', Features);
 Vue.component('v-rating', Rating);
 Vue.component('v-comments', Comments);
+Vue.component('v-regform', RegForm);
+Vue.component('v-baseform', baseForm);
+Vue.component('v-accountform', accountForm);
+
+
 
 
 
