@@ -51,8 +51,8 @@
     <div class="col-12">
     <div >
       <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck1">
-        <label class="form-check-label" for="gridCheck1">
+        <input class="form-check-input" type="checkbox" id="gridCheck2">
+        <label class="form-check-label" for="gridCheck2">
           Example checkbox
         </label>
       </div>

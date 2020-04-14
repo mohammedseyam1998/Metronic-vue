@@ -28,11 +28,7 @@ import RegForm from '../admin/components/RegForm';
 import baseForm from '../admin/components/baseForm';
 
 import accountForm from '../admin/components/accountForm';
-
-
-
-
-
+import chat from '../admin/components/chat';
 
 
 
@@ -75,6 +71,8 @@ Vue.component('v-comments', Comments);
 Vue.component('v-regform', RegForm);
 Vue.component('v-baseform', baseForm);
 Vue.component('v-accountform', accountForm);
+Vue.component('v-chat', chat);
+
 
 
 

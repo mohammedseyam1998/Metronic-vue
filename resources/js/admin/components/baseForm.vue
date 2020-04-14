@@ -78,7 +78,7 @@
       </div>
   </div>
   <div style="text-align: center;">
-  <button class="btn btn-primary" type="submit" @click="validation()" style="text-alight:center">Follow Up</button>
+  <button class="btn btn-primary" type="submit" @click.prevent="validation()" style="text-alight:center">Follow Up</button>
 </div>
   </form>
    </div>
@@ -1015,6 +1015,7 @@
 
  methods: {
     validation() {
+        console.log(this.activTab);
 
         console.log(this.active);
 
@@ -1027,8 +1028,10 @@
 
         }
         form.classList.add('was-validated');
+           this.activTab = '2' ;
       }, false);
     });
+
     //   this.$router.push('/accountform');
   },
     onChange(event) {

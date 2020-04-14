@@ -13,7 +13,7 @@ import managePreferences from '../components/managePreferences'
 import Items from '../components/Items'
 import Tabs from '../components/Tabs'
 import RegForm from '../components/RegForm'
-import accountForm from '../components/accountForm'
+import chat from '../components/chat'
 
 
 
@@ -47,7 +47,9 @@ export default  [
             { path: '/managePreferences', component:  managePreferences },
             { path: '/items', component:  Items },
             { path: '/tabs', component:  Tabs },
-            { path: '/regform', component:  RegForm , children:[{ path: '/accountform', component:  accountForm }] },
+            { path: '/regform', component:  RegForm },
+            { path: '/chat', component:  chat },
+
 
             ]
     }
